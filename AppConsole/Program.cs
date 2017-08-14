@@ -11,7 +11,7 @@ namespace AppConsole
     {
         static void Main(string[] args)
         {
-            LoggerHelper.WriteToFile("this is my firstLog");
+            LoggerHelper.WriteToFile("this is my firstLog","test.txt");
             Console.ReadKey();
         }
     }
