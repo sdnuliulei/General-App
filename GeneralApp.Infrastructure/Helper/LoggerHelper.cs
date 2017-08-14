@@ -16,8 +16,8 @@ namespace GeneralApp.Infrastructure.Helper
 
         public static void StartLog4Net()
         {
-            log4net.Config.XmlConfigurator.ConfigureAndWatch(new FileInfo(AppDomain.CurrentDomain.BaseDirectory+ "log4net.config"));
-            log4net.Config.XmlConfigurator.Configure();
+            //log4net.Config.XmlConfigurator.ConfigureAndWatch(new FileInfo(AppDomain.CurrentDomain.BaseDirectory+ "log4net.config"));
+            //log4net.Config.XmlConfigurator.Configure();
         }
 
         #region 文本日志
@@ -28,7 +28,7 @@ namespace GeneralApp.Infrastructure.Helper
         /// <param name="dir"></param>
         public static void WriteToFile(string message, string dir = "")
         {
-            WriteToFileSetting(() => Log.Info(message), "info", dir);
+            WriteToFileSetting(() => Log.Info(message), "RollingLogFileAppender", dir);
         }
 
         /// <summary>
