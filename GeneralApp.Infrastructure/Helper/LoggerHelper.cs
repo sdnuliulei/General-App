@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.IO;
 using GeneralApp.Infrastructure.Extension;
 using log4net;
 using log4net.Appender;
@@ -12,6 +13,12 @@ namespace GeneralApp.Infrastructure.Helper
     public static class LoggerHelper
     {
         private static readonly ILog Log = LogManager.GetLogger(typeof(LoggerHelper));
+
+        public static void StartLog4Net()
+        {
+            log4net.Config.XmlConfigurator.ConfigureAndWatch(new FileInfo(AppDomain.CurrentDomain.BaseDirectory+ "log4net.config"));
+            log4net.Config.XmlConfigurator.Configure();
+        }
 
         #region 文本日志
         /// <summary>
