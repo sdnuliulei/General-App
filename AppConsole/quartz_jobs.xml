@@ -14,7 +14,7 @@
       <name>TestJob</name>
       <group>Test</group>
       <description>TestJob测试</description>
-      <job-type>ConsoleApp.TestJob,ConsoleApp</job-type>
+      <job-type>AppConsole.TestJob,AppConsole</job-type>
       <durable>true</durable>
       <recover>false</recover>
     </job>
