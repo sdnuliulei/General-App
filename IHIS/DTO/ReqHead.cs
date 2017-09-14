@@ -8,5 +8,8 @@ namespace IHIS.DTO
 {
     public class ReqHead
     {
+        public bool Result { set; get; }
+
+        public string Msg { set; get; }
     }
 }
