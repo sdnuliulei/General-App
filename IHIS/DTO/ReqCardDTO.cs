@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IHIS.DTO
 {
-    public class ReqCardDTO:ReqHead
+    public class ReqCardDTO
     {
         public String CardNo { set; get; }
     }

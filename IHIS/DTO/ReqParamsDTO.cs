@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace IHIS.DTO
 {
-    public class ResHeadDTO
+    public class ReqDataDTO<T> where T: class
     {
+        public string Status { set; get; }
+
+        public T Params { set; get; }
     }
 }

@@ -41,9 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO\ReqCardDTO.cs" />
-    <Compile Include="DTO\ReqHead.cs" />
+    <Compile Include="DTO\ReqParamsDTO.cs" />
     <Compile Include="DTO\ResCardDTO.cs" />
-    <Compile Include="DTO\ResHeadDTO.cs" />
+    <Compile Include="DTO\ResDataDTO.cs" />
     <Compile Include="ICard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace IHIS.DTO
 {
-    public class ReqHead
+    public class ResDataDTO
     {
-        public bool Result { set; get; }
-
-        public string Msg { set; get; }
+       
     }
 }
